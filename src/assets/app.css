@@ -1,0 +1,98 @@
+*,
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: black;
+  width: 450px;
+  height: 15%;
+  position: relative;
+  left: 27%;
+  padding: 2%;
+  border-radius: 20px;
+}
+header {
+  display: flex;
+  flex-direction: row;
+}
+header div {
+  display: flex;
+  flex-direction: column;
+}
+header img {
+  width: 100px;
+  border-radius: 50%;
+}
+strong {
+  color: aliceblue;
+  font-family: "poppins", sans-serif;
+}
+span {
+  color: aliceblue;
+  font-family: "poppins", sans-serif;
+  text-align: center;
+}
+button {
+  height: 25%;
+  width: 130px;
+  height: 35px;
+  padding: 0px 10px;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button strong {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+aside {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.noSeguir {
+  display: none;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  top: 5%;
+}
+.isFollowing:hover {
+  background: transparent;
+  border: 1px solid red;
+  color: aliceblue;
+  transition: 0.5s all;
+}
+.isFollowing:hover .siguiendo {
+  display: none;
+  transition: 0.5s all;
+}
+.isFollowing:hover .noSeguir {
+  display: block;
+  color: red;
+  display: flex;
+  align-items: center;
+  transition: 0.5s all;
+}
+.isNotFollowing:hover {
+  background-color: rgb(79, 79, 255);
+  color: aliceblue;
+  transition: 0.5s all;
+}
+.isNotFollowing:hover .noSeguir {
+  display: none;
+  transition: 0.5s all;
+}
